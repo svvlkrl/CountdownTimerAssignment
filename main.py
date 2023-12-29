@@ -1,3 +1,4 @@
+import time
 from datetime import datetime
 
 while True:
@@ -18,5 +19,5 @@ while True:
         print("Geri sayım tamamlandı!!")
         break
     else:
-        print(f"Geri sayım için kalan süre: {time_left}")
-
+        print(end="\r" f"Geri sayım için kalan süre: {time_left}")
+        time.sleep(1)
